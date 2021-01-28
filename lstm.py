@@ -154,5 +154,3 @@ trainer.test(model, dataset_test)
 
 X, y = next(iter(dataset_test))
 y_pred = torch.round(model(X).view(-1))
-
-#normalizacja, warstwa layer normalization, dodac po lstm
