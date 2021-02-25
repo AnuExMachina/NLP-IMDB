@@ -5,17 +5,12 @@ test_neg_names = os.listdir('data/test/neg')
 test_pos_names = os.listdir('data/test/pos')
 train_neg_names = os.listdir('data/train/neg')
 train_pos_names = os.listdir('data/train/pos')
-# test_neg.shape
-# test_pos.shape
 
-# len(test_pos)
-# test_neg_names[1]
 test = []
 for i in test_neg_names:
     with open(f'data/test/neg/{i}', 'r', encoding='utf-8') as f:
         data = f.read()
     test.append([data, 0])
-
 
 for i in test_pos_names:
     with open(f'data/test/pos/{i}', 'r', encoding='utf-8') as f:
